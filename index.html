@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertify</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-wt4B6BDx9VX+prONmvf+zJNcRkUJSMrYc+MKYOqFl9SsLofbNflXrVS+fdePFEu9ceA01ZkZl9m+chUStcYrxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+        <li>
+              <details>
+                <summary>Categories</summary>
+                <ul class="p-2">
+                  <li><a>Sports</a></li>
+                  <li><a>Events</a></li>
+                  <li><a>Meetups</a></li>
+
+                </ul>
+              </details>
+            </li>
+            <li><a>Events</a></li>
+            <li><a>Contact</a></li>  
+          </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl logo">Alertify</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+        <li>
+              <details>
+                <summary>Categories</summary>
+                <ul class="p-2">
+                  <li><a>Sports</a></li>
+                  <li><a>Events</a></li>
+                  <li><a>Meetups</a></li>
+
+                </ul>
+              </details>
+            </li>
+            <li><a>Events</a></li>
+            <li><a>Contact</a></li>  
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-md btn-primary"  href="assets/login.php">Login</a>
+        </div>
+      </div>
+
+<section>
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/polo.jpg" class="w-full"style="max-height: 90vh;" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/conference.jpg" class="w-full" style="max-height: 90vh;"/>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/race.jpg" class="w-full" style="max-height: 90vh;" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/concert.jpg" class="w-full" style="max-height: 90vh;" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-overlay">
+        <h2 class="text-5xl">Get notified for every event with Alertify</h2>
+        <button class="btn btn-primary mt-5">Get Alertify</button>
+    </div>
+</section>
+
+<section id="about" class="p-10">
+  <h2 class="text-4xl font-bold text-center mt-10 mb-10">Know About us</h2>
+  <div class="card lg:card-side flex">
+    <figure class="w-full lg:w-1/3">
+        <img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" class="w-full h-full" style="height: 52vh;">
+    </figure>
+    <div class="card-body w-full lg:w-1/2 px-4">
+        <!-- About Text on the Right -->
+        <h2 class="text-3xl font-bold mb-3">About Alertify</h2>
+        <p>Alertify is your dedicated companion for personalized event alerts and timely reminders, ensuring you never miss a moment of your favorite sports, concerts, conferences, or any other significant activity. With a user-friendly interface, Alertify allows you to customize alerts based on your preferences, delivering seamless and intuitive event management. Stay effortlessly informed and prepared for your preferred events, making Alertify your go-to platform for staying connected and never missing out on the experiences that matter most to you.</p>
+          <!-- Button -->
+        <button class="btn btn-md sm:btn-md btn-outline btn-primary md:btn-md btn-active btn-primary lg:btn-md btn-outline btn-primary">GET Alertify</button>
+    </div>
+  </div>
+</section>
+
+<section id="why-alertify" class="p-10">
+  <h2 class="text-4xl font-bold text-center mt-10 mb-10">Why Choose Us?</h2>
+  <div class="choose-cards flex flex-wrap justify-center gap-8">
+    <!-- Card 1: Login/Signup -->
+    <div class="card w-80 bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center p-8">
+        <i class="fas fa-sign-in-alt text-5xl text-primary mb-4"></i>
+        <h2 class="card-title text-xl font-bold mb-3">Step 1: Login/Signup</h2>
+        <p>Create an account or log in to get started with Alertify. Your personalized experience begins here!</p>
+      </div>
+    </div>
+
+    <!-- Card 2: Select Your Interest -->
+    <div class="card w-80 bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center p-8">
+        <i class="fa fa-heart text-5xl text-primary mb-4"></i>
+        <h2 class="card-title text-xl font-bold mb-3">Step 2: Select Your Interest</h2>
+        <p>Choose your favorite sports, concerts, or events to tailor the alerts based on your interests and preferences.</p>
+      </div>
+    </div>
+
+    <!-- Card 3: Get Events Based on Your Interests -->
+    <div class="card w-80 bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center p-8">
+        <i class="fas fa-calendar-check text-5xl text-primary mb-4"></i>
+        <h2 class="card-title text-xl font-bold mb-3">Step 3: Get Events</h2>
+        <p>Receive curated event suggestions based on your selected interests. Explore and discover exciting happenings!</p>
+      </div>
+    </div>
+
+    <!-- Card 4: Click Bookmark or Get Alert -->
+    <div class="card w-80 bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center p-8">
+        <i class="fas fa-bell text-5xl text-primary mb-4"></i>
+        <h2 class="card-title text-xl font-bold mb-3">Step 4: Bookmark or Get Alert</h2>
+        <p>Bookmark your favorite events or set up alerts to receive notifications and stay informed about upcoming activities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
